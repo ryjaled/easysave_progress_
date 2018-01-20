@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<h lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>EasySave</title>
+		<meta name="format-detection" content="telephone=no">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<link rel="stylesheet" href="sites/uikit/css/uikit.min.css" />
+		<link rel="stylesheet" href="sites/css/easysave.css" />
+		<link rel="stylesheet" href="sites/libraries/font_awesome/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="main">
+			<div class="logo">
+				<img src="sites/images/easy.png">
+			</div>
+			<div class="login-panel">
+				<div class="container">
+					<div class="panel-hide">
+						<i class="fa fa-chevron-down" aria-hidden="true"></i>
+					</div>
+					<div class="input-panel">
+						<input type="text" id="homeUsername" placeholder="USERNAME">
+						<input type="password" id="homePassword" placeholder="PASSWORD">
+					</div>
+					<div class="btn-panel">
+						<span onclick="loginCustomer()">Customer Login</span><br>
+						<span onclick="loginMerchant()">Merchant Login</span><br>
+						<span class="signpanel-btn btn">Sign Up</span>
+						<!--					<span class="text">Forgot Password?</span>-->
+					</div>
+				</div>
+			</div>
+
+			<div class="signup-panel">
+				<div class="signup-panel-hide">
+					<i class="sign-fa fa fa-chevron-down" aria-hidden="true"></i>
+				</div>
+				<div class="user-type-panel">
+					<div class="container">
+						<p class="s-text">Sign Up</p><br>
+						<span class="subtext"> Do you want to sign up as a customer or an agent? Please Select below</span>
+						<span class="user-type"> </span>
+						<div class="img-holder">
+							<img class="type-merchant" src="sites/images/001-help-operator.png">
+							<p class="type-merchant">Merchant</p>
+						</div>
+						<div class="img-holder">
+							<img class="type-customer" src="sites/images/002-clerk-with-tie.png">
+							<p class="type-customer">Customer</p>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="signup-form">
+						<div class="input-panel">
+							<input class="input" type="email" placeholder="EMAIL">
+							<input class="input" type="text" placeholder="FIRSTNAME">
+							<input  class="input"type="text" placeholder="LASTNAME">
+							<input class="input"type="date" placeholder="DOB">
+							<select class="input">
+								<option value="" disabled>GENDER</option>
+								<option value="Male" >MALE</option>
+								<option value="Female" >FEMALE</option>
+							</select>
+							<input class="input"type="password" placeholder="PASSWORD">
+							<input class="input" type="password" placeholder="CONFIRM PASSWORD">
+						</div>
+						<div class="btn-panel">
+							<span class="signup-btn btn">Sign Up</span>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="verification-form">
+						<p class="text">Please Enter Your Phone Number To Verify Your Account</p>
+						<div class="input-panel">
+							<span class="module icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+							<span class="module code">+233</span>
+							<input class="verification_number" type="phone" placeholder="">
+						</div>
+						<div class="btn-panel">
+							<span class="number-btn confirm btn">Confirm</span>
+							<span class="number-btn back btn">Back</span>
+						</div>
+					</div>
+					<div class="code-form">
+						<p class="text">We've sent you a code, please enter it</p>
+						<div class="input-panel">
+							<input class="input code" type="text" placeholder="">
+						</div>
+						<div class="btn-panel">
+							<span class="number-btn confirm-code btn">Confirm</span>
+							<span class="number-btn code-back btn">Back</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="vertical-align-wrap">
+				<div class="login-pop btn" >Login</div>
+			</div>
+		</div>
+
+		<!--		scripts-->
+		<script type="text/javascript" src="sites/libraries/js-toast-master/toast.js"></script>
+		<script type="text/javascript" src="sites/libraries/jquery.js"></script>
+		<script type="text/javascript" src="css.js"></script>
+		<script src="sites/uikit/js/uikit.min.js"></script>
+
+	</body>
+	</html>
